@@ -8,9 +8,7 @@ Two implementations:
 - Using contigous data structure (Array)
 - Using LinkedList data structure
 
-**Contigous data structure**
-
----
+#### Contigous data structure
 
 **Array implmentation** ( Unsorted & Sorted)
 
@@ -30,7 +28,7 @@ Avoid collision - 2 keys maping to same index ( good Hash function can avoid thi
 | Insert(key,val) | 0(1) Hash function calc key, set A[k] = value |
 | Delete(key)     | 0(1) Hash function calc key, set A[k] = null  |
 
-## **LinkedList implementation** (Unsorted & Sorted)
+#### **LinkedList implementation** (Unsorted & Sorted)
 
 Using the LikedList to solve our intial problem
 
@@ -53,7 +51,7 @@ We can tranform list to a tree (Search Tree) => e.g BST
 | Insert(key,val) |           0(log N)           |
 | Delete(key)     |           0(log N)           |
 
-Summary : Implementing Dictionary/Set ADT
+#### Summary : Implementing Dictionary/Set ADT
 
 | Operation       | Hashtable | Balanced BST |
 | --------------- | :-------: | -----------: |
