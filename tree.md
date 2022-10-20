@@ -59,7 +59,7 @@ We can tranform list to a tree (Search Tree) => e.g BST
 | Insert(key,val) |   0(1)    |     0(log N) |
 | Delete(key)     |   0(1)    |     0(log N) |
 
-#BST Search
+# BST Search
 
 ```csharp
 //Node class definition
@@ -71,5 +71,24 @@ public class Node {
         key = item;
         left = right = null;
     }
+}
+```
+
+```csharp
+//Search a BST for given key
+public Node search(Node root, int key){
+    if( root == null) return null;
+
+    Node curr = root;
+    while(curr != null) {
+        if( key == curr.key){
+            return curr;
+        }else if( key < curr.key){
+            curr = curr.left;
+        }else{
+            curr = curr.right
+        }
+    }
+    return null;
 }
 ```
